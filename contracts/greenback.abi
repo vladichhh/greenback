@@ -1,0 +1,559 @@
+{
+    "____comment": "This file was generated with eosio-abigen. DO NOT EDIT ",
+    "version": "eosio::abi/1.1",
+    "types": [],
+    "structs": [
+        {
+            "name": "addpicker",
+            "base": "",
+            "fields": [
+                {
+                    "name": "picker_account",
+                    "type": "name"
+                }
+            ]
+        },
+        {
+            "name": "addplastic",
+            "base": "",
+            "fields": [
+                {
+                    "name": "id",
+                    "type": "uint64"
+                },
+                {
+                    "name": "name",
+                    "type": "string"
+                },
+                {
+                    "name": "rate",
+                    "type": "uint64"
+                }
+            ]
+        },
+        {
+            "name": "addreception",
+            "base": "",
+            "fields": [
+                {
+                    "name": "reception_account",
+                    "type": "name"
+                }
+            ]
+        },
+        {
+            "name": "addrecycler",
+            "base": "",
+            "fields": [
+                {
+                    "name": "recycler_account",
+                    "type": "name"
+                },
+                {
+                    "name": "plastic_types",
+                    "type": "uint64[]"
+                }
+            ]
+        },
+        {
+            "name": "adjust",
+            "base": "",
+            "fields": [
+                {
+                    "name": "transfer",
+                    "type": "name"
+                },
+                {
+                    "name": "reception",
+                    "type": "name"
+                },
+                {
+                    "name": "adjustments",
+                    "type": "adjustment[]"
+                },
+                {
+                    "name": "total_weighted",
+                    "type": "float64"
+                }
+            ]
+        },
+        {
+            "name": "adjustment",
+            "base": "",
+            "fields": [
+                {
+                    "name": "plastic_type",
+                    "type": "uint64"
+                },
+                {
+                    "name": "total_weight",
+                    "type": "float64"
+                }
+            ]
+        },
+        {
+            "name": "buyplastic",
+            "base": "",
+            "fields": [
+                {
+                    "name": "buyer",
+                    "type": "name"
+                },
+                {
+                    "name": "recycler",
+                    "type": "name"
+                },
+                {
+                    "name": "plastic_type",
+                    "type": "uint64"
+                },
+                {
+                    "name": "plastic_weight",
+                    "type": "float64"
+                }
+            ]
+        },
+        {
+            "name": "deldata",
+            "base": "",
+            "fields": [
+                {
+                    "name": "account",
+                    "type": "name"
+                }
+            ]
+        },
+        {
+            "name": "deliveryh",
+            "base": "",
+            "fields": [
+                {
+                    "name": "delivery_id",
+                    "type": "uint64"
+                },
+                {
+                    "name": "picker",
+                    "type": "uint64"
+                },
+                {
+                    "name": "reception",
+                    "type": "uint64"
+                },
+                {
+                    "name": "date_added",
+                    "type": "uint64"
+                },
+                {
+                    "name": "hasAI",
+                    "type": "bool"
+                },
+                {
+                    "name": "total_minted_tokens",
+                    "type": "float64"
+                },
+                {
+                    "name": "batch_hash",
+                    "type": "string"
+                },
+                {
+                    "name": "ipfs_url",
+                    "type": "string"
+                },
+                {
+                    "name": "total_weighted",
+                    "type": "float64"
+                }
+            ]
+        },
+        {
+            "name": "deliveryl",
+            "base": "",
+            "fields": [
+                {
+                    "name": "id",
+                    "type": "uint64"
+                },
+                {
+                    "name": "delivery_id",
+                    "type": "uint64"
+                },
+                {
+                    "name": "item_id",
+                    "type": "uint64"
+                },
+                {
+                    "name": "plastic_type",
+                    "type": "uint64"
+                },
+                {
+                    "name": "total_weight",
+                    "type": "float64"
+                },
+                {
+                    "name": "count",
+                    "type": "uint64"
+                }
+            ]
+        },
+        {
+            "name": "deliveryptw",
+            "base": "",
+            "fields": [
+                {
+                    "name": "id",
+                    "type": "uint64"
+                },
+                {
+                    "name": "delivery_id",
+                    "type": "uint64"
+                },
+                {
+                    "name": "plastic_type",
+                    "type": "uint64"
+                },
+                {
+                    "name": "total_weight",
+                    "type": "float64"
+                }
+            ]
+        },
+        {
+            "name": "item",
+            "base": "",
+            "fields": [
+                {
+                    "name": "item_id",
+                    "type": "uint64"
+                },
+                {
+                    "name": "plastic_type",
+                    "type": "uint64"
+                },
+                {
+                    "name": "total_weight",
+                    "type": "float64"
+                },
+                {
+                    "name": "count",
+                    "type": "uint64"
+                },
+                {
+                    "name": "producer",
+                    "type": "uint64"
+                }
+            ]
+        },
+        {
+            "name": "picker",
+            "base": "",
+            "fields": [
+                {
+                    "name": "account",
+                    "type": "uint64"
+                },
+                {
+                    "name": "total_delivered_weight",
+                    "type": "float64"
+                },
+                {
+                    "name": "total_minted_tokens",
+                    "type": "float64"
+                },
+                {
+                    "name": "total_weighted",
+                    "type": "float64"
+                }
+            ]
+        },
+        {
+            "name": "plastict",
+            "base": "",
+            "fields": [
+                {
+                    "name": "id",
+                    "type": "uint64"
+                },
+                {
+                    "name": "type",
+                    "type": "string"
+                },
+                {
+                    "name": "rate",
+                    "type": "uint64"
+                }
+            ]
+        },
+        {
+            "name": "producer",
+            "base": "",
+            "fields": [
+                {
+                    "name": "id",
+                    "type": "uint64"
+                },
+                {
+                    "name": "producer",
+                    "type": "uint64"
+                },
+                {
+                    "name": "plastic_type",
+                    "type": "uint64"
+                },
+                {
+                    "name": "total_weight",
+                    "type": "float64"
+                },
+                {
+                    "name": "count",
+                    "type": "uint64"
+                }
+            ]
+        },
+        {
+            "name": "purchase",
+            "base": "",
+            "fields": [
+                {
+                    "name": "id",
+                    "type": "uint64"
+                },
+                {
+                    "name": "buyer",
+                    "type": "uint64"
+                },
+                {
+                    "name": "recycler",
+                    "type": "uint64"
+                },
+                {
+                    "name": "date_of_purchase",
+                    "type": "uint64"
+                },
+                {
+                    "name": "plastic_type",
+                    "type": "uint64"
+                },
+                {
+                    "name": "total_weight",
+                    "type": "float64"
+                }
+            ]
+        },
+        {
+            "name": "reception",
+            "base": "",
+            "fields": [
+                {
+                    "name": "account",
+                    "type": "uint64"
+                },
+                {
+                    "name": "confirmed",
+                    "type": "bool"
+                },
+                {
+                    "name": "total_weighted",
+                    "type": "float64"
+                }
+            ]
+        },
+        {
+            "name": "recycler",
+            "base": "",
+            "fields": [
+                {
+                    "name": "id",
+                    "type": "uint64"
+                },
+                {
+                    "name": "account",
+                    "type": "uint64"
+                },
+                {
+                    "name": "plastic_type",
+                    "type": "uint64"
+                }
+            ]
+        },
+        {
+            "name": "regdelivery",
+            "base": "",
+            "fields": [
+                {
+                    "name": "delivery_id",
+                    "type": "uint64"
+                },
+                {
+                    "name": "picker",
+                    "type": "name"
+                },
+                {
+                    "name": "reception",
+                    "type": "name"
+                },
+                {
+                    "name": "auto_filled",
+                    "type": "bool"
+                },
+                {
+                    "name": "items",
+                    "type": "item[]"
+                },
+                {
+                    "name": "batch_hash",
+                    "type": "string"
+                },
+                {
+                    "name": "ipfs_url",
+                    "type": "string"
+                },
+                {
+                    "name": "total_weighted",
+                    "type": "float64"
+                }
+            ]
+        },
+        {
+            "name": "totplastic",
+            "base": "",
+            "fields": [
+                {
+                    "name": "id",
+                    "type": "uint64"
+                },
+                {
+                    "name": "account",
+                    "type": "uint64"
+                },
+                {
+                    "name": "plastic_type",
+                    "type": "uint64"
+                },
+                {
+                    "name": "total_weight",
+                    "type": "float64"
+                },
+                {
+                    "name": "count",
+                    "type": "uint64"
+                }
+            ]
+        }
+    ],
+    "actions": [
+        {
+            "name": "addpicker",
+            "type": "addpicker",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "addplastic",
+            "type": "addplastic",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "addreception",
+            "type": "addreception",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "addrecycler",
+            "type": "addrecycler",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "adjust",
+            "type": "adjust",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "buyplastic",
+            "type": "buyplastic",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "deldata",
+            "type": "deldata",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "regdelivery",
+            "type": "regdelivery",
+            "ricardian_contract": ""
+        }
+    ],
+    "tables": [
+        {
+            "name": "deliveryhs",
+            "type": "deliveryh",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": "deliveryls",
+            "type": "deliveryl",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": "deliveryptws",
+            "type": "deliveryptw",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": "pickers",
+            "type": "picker",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": "plasticts",
+            "type": "plastict",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": "producers",
+            "type": "producer",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": "purchases",
+            "type": "purchase",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": "receptions",
+            "type": "reception",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": "recyclers",
+            "type": "recycler",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": "totplastics",
+            "type": "totplastic",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        }
+    ],
+    "ricardian_clauses": [],
+    "variants": []
+}

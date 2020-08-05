@@ -1,0 +1,22 @@
+{
+  "name": "contracts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "mocha --timeout 10000 ./tests/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://gitlab.com/limelabs/arxum-greenback-poc/contracts.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "eoslime": "0.0.15",
+    "mocha": "5.2.0"
+  }
+}
